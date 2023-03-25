@@ -1,0 +1,49 @@
+                        Internet
+                           |
+                +----------+----------+
+                |                     |
+             BGP Router          BGP Router
+                |                     |
+          +-----+-----+         +-----+-----+
+          |           |         |           |
+     Distribution   Distribution Distribution
+     Router 1       Router 2     Router 3
+          |           |         |           |
+          +-----+-----+         +-----+-----+
+                |                     |
+         +------+------+         +------+------+
+         |             |         |             |
+     Distribution  Distribution  Distribution
+     Router 4       Router 5     Router 6
+         |              |         |           |
+         +------+-------         +------+----+
+                |                     |
+         +------+------+         +------+------+
+         |             |         |             |
+     Distribution  Distribution  Distribution
+     Router 7       Router 8     Router 9
+         |              |         |           |
+         +------+-------         +------+----+
+                |                     |
+         +------+------+         +------+------+
+         |             |         |             |
+     Distribution  Distribution  Distribution
+     Router 10      Router 11    Router 12
+         |              |         |           |
+         +------+-------         +------+----+
+                |                     |
+             Core Router          Core Router
+                |                     |
+          +-----+-----+         +-----+-----+
+          |           |         |           |
+        Border       Border     VPN Router
+        Router       Router
+          |           | 
+     +----+----+ +----+----+
+     |         | |         |
+  Customer  Customer  Customer
+  Router    Router    Router
+     |         |         |
+  +--+-----+--+--+--+--+--+--+
+  |        PC         |        PC       |
+  
